@@ -1,0 +1,72 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: 400px;
+    background: url(../どらがおじゃんけん/表紙.jpg)no-repeat;
+    background-position: center;
+    background-color: #fff;
+    background-size: 70%;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+main{
+    border-bottom:1px solid #ccc;
+    width: 100%;
+}
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fff;
+    height:200px;
+}
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+li{
+    text-align: center;
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #FFF;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+}
+
+li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+}
+
+li:hover{
+    background: #FFF;
+    color:#fff;
+}
+
+#com_hand img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+}
+
+#result{
+    text-align: center;
+}
+

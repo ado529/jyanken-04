@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/sample.css">
+  <title>じゃんけん</title>
+</head>
+
+<body>
+  <header>
+    
+  </header>
+
+  <main>
+    <ul>
+      <li id="gu_btn"><img src="img/../どらがおじゃんけん/どらがおグー.jpg" alt=""></li>
+      <li id="cho_btn"><img src="img/../どらがおじゃんけん/どらがおチョキ.jpg" alt=""></li>
+      <li id="par_btn"><img src="img/../どらがおじゃんけん/どらがおパー.jpg" alt=""></li>
+    </ul>
+    <div id="com_hand">コンピュータの出した手は？</div>
+    <div id="result">結果は？</div>
+  </main>
+
+  <footer>フッター</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    //ここに処理を追加
+    $("#gu_btn").on("click",function(){
+      const iamgu=0;
+      const comp=Math.floor(Math.random()*4);
+
+      if(comp==0){
+        $("#com_hand").html('<img src="img/../どらがおじゃんけん/グードラミ.png" alt="">');
+        $("#result").text("あいこ");
+
+      }
+      else if(comp==1){
+        $("#com_hand").html('<img src="img/../どらがおじゃんけん/チョキのびた.jpg" alt="">');
+        $("#result").text("ドラえもんの勝ち");
+      }
+      else if (comp == 2) {
+        $("#com_hand").html('<img src="img/../どらがおじゃんけん/パーしずか.jpg" alt="">');
+        $("#result").text("しずかちゃんの勝ち");
+      }
+    });
+  
+    $("#cho_btn").on("click", function () {
+      const iamcho = 1;
+      const comp = Math.floor(Math.random() * 4);
+    
+      if (comp == 0) {
+        $("#com_hand").html('<img src="img/../どらがおじゃんけん/グードラミ.png" alt="">');
+        $("#result").text("ドラミちゃんの勝ち");
+      }
+      else if (comp == 1) {
+        $("#com_hand").html('<img src="img/../どらがおじゃんけん/チョキのびた.jpg" alt="">');
+        $("#result").text("あいこ");
+      }
+      else if (comp == 2) {
+        $("#com_hand").html('<img src="img/../どらがおじゃんけん/パーしずか.jpg" alt="">');
+        $("#result").text("ドラえもんの勝ち");
+      }
+      });
+
+    $("#par_btn").on("click", function () {
+      const iamcho = 2;
+      const comp = Math.floor(Math.random() * 4);
+
+      if (comp == 0) {
+        $("#com_hand").html('<img src="img/../どらがおじゃんけん/グードラミ.png" alt="">');
+        $("#result").text("ドラえもんの勝ち");
+
+      }
+      else if (comp == 1) {
+        $("#com_hand").html('<img src="img/../どらがおじゃんけん/チョキのびた.jpg" alt="">');
+        $("#result").text("のび太くんの勝ち")
+      }
+      else if (comp == 2) {
+        $("#com_hand").html('<img src="img/../どらがおじゃんけん/パーしずか.jpg" alt="">');
+        $("#result").text("あいこ")
+      }
+      });
+  </script>
+
+</body>
+
+</html>
