@@ -1,5 +1,7 @@
 # jyanken-04
 
+https://ado529.github.io/jyanken-04/
+
 【ドラがおじゃんけん】
 
 【現状】
